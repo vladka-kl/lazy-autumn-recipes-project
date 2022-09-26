@@ -3,6 +3,9 @@
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
   --main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --sm-margin: 8px;
+  --md-margin: 16px;
+  --lg-margin: 32px;
   /* add font sizes  
   add margins*/
 }
