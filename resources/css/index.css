@@ -1,15 +1,59 @@
+
+:root {
+    --primary-accent: #261629;
+    --secondary-accent: #ff9000;
+    --background-color: #f9e3fe;
+    --main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    --sm-margin: 8px;
+    --md-margin: 16px;
+    --lg-margin: 32px;
+    /* add font sizes  
+    add margins*/
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
 header {
-    display: flex;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var( --primary-accent);
+    color: var(--background-color);
+    width: 100%;
+    text-align: center;
+    height: 16vw;
+    align-items: center;
 }
 
-header nav ul {
-    display: inline-block;
+h1 {
+    font-size: 4.7vw;
+    font-family: 'Gothic A1', sans-serif;
 }
 
-#ingredients-selection ul li{
-    display: inline-block;
+.header-nav {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: end;
+    height: 6vw;
 }
 
-#recipes ul li {
-    
+
+.logo img {
+    height: 11vw;
+    margin-top: 2px;
 }
+
+.dropbtn img{
+    background-color: transparent;
+    border: none;
+    height: 2vw;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+  }
