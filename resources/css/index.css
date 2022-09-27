@@ -1,0 +1,15 @@
+header {
+    display: flex;
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+#ingredients-selection ul li{
+    display: inline-block;
+}
+
+#recipes ul li {
+    
+}
