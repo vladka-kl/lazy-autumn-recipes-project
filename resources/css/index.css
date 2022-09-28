@@ -10,6 +10,7 @@
   --lg-margin: 32px;
   --max-margin: 48px;
   --base-font-size: 16px;
+  --section-font-size: 1.3em;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
@@ -73,9 +74,34 @@ flex-direction: column;
 justify-content: space-around;
 text-align:left;
 padding-left: 8px;
-<<<<<<< HEAD
+}
+.ingredient-title{
+    background-color: var(--secondary-accent);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: var(--section-font-size);
+    font-weight: bold;
+    height: 48px;
+    padding-left: 8px;
 
-=======
+    
+}
+.ingredients-selection {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.ingredient-pics{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
 }
 footer {
   text-align: center;
@@ -131,5 +157,4 @@ form {
   color: var(--secondary-accent);
   font-size: 0.8em;
   padding: var(--base-padding);
->>>>>>> 2af91f81d48ebb8c50253dcd6a43b9117cef5316
 }
