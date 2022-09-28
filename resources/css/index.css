@@ -1,5 +1,4 @@
 :root {
-
   --primary-accent: #261629;
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
@@ -10,6 +9,7 @@
   --lg-margin: 32px;
   --max-margin: 48px;
   --base-font-size: 16px;
+  --section-font-size: 1.3em;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
@@ -65,14 +65,46 @@ h1 {
   height: 2vw;
 }
 .welcome {
-
 font-size: var(--base-font-size);
 font-family: 'Gothic A1', sans-serif;
 display: flex;
 flex-direction: column;
+justify-content: space-around;
 text-align:left;
 padding-left: 8px;
 }
+.ingredient-title{
+    background-color: var(--secondary-accent);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: var(--section-font-size);
+    font-weight: bold;
+    height: 48px;
+    padding-left: 8px;
+
+    
+}
+.ingredients-selection {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.ingredient-pics{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding-top: var(--sm-margin);
+
+}
+
+/*-----Footer styles start here------*/
 footer {
   text-align: center;
   font-weight: lighter;
@@ -104,6 +136,12 @@ form {
   margin-left: var(--max-margin);
   margin-right: var(--max-margin);
 }
+.alert {
+  color: red;
+  margin-bottom: var(--md-margin);
+  margin-left: var(--md-margin);
+  margin-right: var(--md-margin);
+}
 .button {
   background-color: var(--primary-accent);
   color: var(--secondary-accent);
@@ -127,7 +165,7 @@ form {
   color: var(--secondary-accent);
   font-size: 0.8em;
   padding: var(--base-padding);
->>>>>>> 2af91f81d48ebb8c50253dcd6a43b9117cef5316
+
 }
 
 /* To-the-top Button */
@@ -156,3 +194,18 @@ form {
   pointer-events: auto;
   bottom: 32px;
 }
+
+
+
+@media screen and (min-width: 768px) {
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+    width: 700px;
+  }
+}
+
+
+

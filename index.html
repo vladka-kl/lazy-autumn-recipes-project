@@ -45,11 +45,12 @@
           We will present you three easy-piecy recipes for each ingredient you choose.
           Please have at it!</p>
       </div>
-      <section id="ingredients-selection">
-        <ul>
-            <li>Turnip</li>
-            <li>Pumpkin</li>
-            <li>Zucchini</li>
+      <section>
+        <p class = "ingredient-title">CHOOSE YOUR INGREDIENT</p>
+        <ul class="ingredients-selection">
+            <li>Turnip<img src= "assets/thumb-matilda-bellman-p7R7zdTXXH4-unsplash.jpeg" alt="Turnip" class ="ingredient-pics"></li>
+            <li>Pumpkin<img src="assets/thumb-kerstin-wrba-zeInZepl_Hw-unsplash.jpeg" class ="ingredient-pics" alt="Pumpkin"></li>
+            <li>Zucchini<img src="assets/thumb-edson-rosas-T78BW9onx-I-unsplash.jpeg" alt="Zucchini" class ="ingredient-pics"></li>
         </ul>
       </section>
       <section id="recipes">
@@ -64,10 +65,15 @@
         <div id="newsletter-hl">Sign up to our Newsletter</div>
         <div id="nl-form">
           <form>
-            <input type="text" id="email" name="email" value="Email address" class="input-field">
-            <input type="button" value="SUBSCRIBE" class="button">
+            <input type="email" id="email" name="email" placeholder="Email address" class="input-field" required>
+            <input type="submit" value="SUBSCRIBE" class="button submit-button">
           </form>
         </div>
+        <dialog class="modal" id="modal">
+          <h2>Thank you for subscribing</h2>
+          <p>Check your email inbox and confirm your subscribtion. Once you've done that we will spam you we irrelevant information as often as possible. How FUN!</p>
+          <button class=" button close-button">Yay, thanks!</button>
+        </dialog>
       </section>
       <hr>
       <section id="footer-links">
@@ -76,7 +82,8 @@
         <div class="footer-links">About us</div>
       </section>
       
-      <section id="copyright">&copy; Wilders</section>
+      <section id="copyright">&copy; Wilders: Vlada, Luis, Robert, Marianne</section>
+      <script src="resources/js/index.js"></script>
     </footer>
     <!-- To-the-top Button -->
     <a href="#" class="to-top">
