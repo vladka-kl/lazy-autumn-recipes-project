@@ -1,16 +1,5 @@
-:root {
-  --primary-accent: #261629;
-  --secondary-accent: #ff9000;
-  --background-color: #f9e3fe;
-  --card-background: #f4f2f3;
-  --main-font: "Roboto", sans-serif;
-  --sm-margin: 8px;
-  --md-margin: 16px;
-  --lg-margin: 32px;
-  --max-margin: 48px;
-  --base-font-size: 16px;
-  --base-padding: 16px;
-  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+html {
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -23,9 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-html{
-  scroll-behavior: smooth;
 }
 
 /* Logo */
@@ -39,7 +25,8 @@ html{
 
 /* Title */
 h1 {
-  font-size: 1.2em;
+  font-size: var(--base-font-size);
+  font-family: var(--main-font);
   font-weight: 900;
   line-height: 20px;
   color: var(--background-color);
@@ -47,54 +34,51 @@ h1 {
 
 /* Dropdown list */
 .dropdown_button {
-
-    background-color: transparent;
-    color: var(--secondary-accent);
-    padding: var(--base-padding);
-    font-size: var( --base-font-size);
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    font-family: var( --main-font);
-    border: none;
+  background-color: transparent;
+  color: var(--secondary-accent);
+  padding: var(--base-padding);
+  font-size: var(--base-font-size);
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  font-family: var(--main-font);
+  border: none;
 }
 
 .menu {
-    display: none;
-    position: absolute;
-    background-color: var(--background-color);
-    box-shadow: var(--standard-shadow);
-    z-index: 1;
-    right: 0;
-    min-width: 200px;
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  box-shadow: var(--standard-shadow);
+  z-index: 1;
+  right: 0;
+  min-width: 200px;
 }
 
 .menu li {
-    color: black;
-    padding: 12px 10px;
-    text-decoration: none;
-    display: block;
-    list-style: none;
-    background-color: var(--primary-accent);;
-    font-family: var( --main-font);
-    border: 1px solid var(--background-color);
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  background-color: var(--primary-accent);
+  font-family: var(--main-font);
+  border: 1px solid var(--background-color);
 }
 
 .menu li a {
-    text-decoration: none;
-    color: var(--background-color);
-    display: block;
-    padding: 10px;
-
+  text-decoration: none;
+  color: var(--background-color);
+  display: block;
+  padding: 10px;
 }
 
 .menu li:hover {
-    background-color: var(--background-color);
-    color:  var(--primary-accent);
+  background-color: var(--background-color);
+  color: var(--primary-accent);
 }
 .menu li a:hover {
-  color:  var(--primary-accent);
-
+  color: var(--primary-accent);
 }
 /* Menu Icon */
 .container {
