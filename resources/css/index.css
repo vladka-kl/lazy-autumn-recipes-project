@@ -1,5 +1,4 @@
 :root {
-
   --primary-accent: #261629;
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
@@ -65,13 +64,12 @@ h1 {
   height: 2vw;
 }
 .welcome {
-
-font-size: var(--base-font-size);
-font-family: 'Gothic A1', sans-serif;
-display: flex;
-flex-direction: column;
-text-align:left;
-padding-left: 8px;
+  font-size: var(--base-font-size);
+  font-family: "Gothic A1", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 8px;
 }
 footer {
   text-align: center;
@@ -127,4 +125,14 @@ form {
   color: var(--secondary-accent);
   font-size: 0.8em;
   padding: var(--base-padding);
+}
+
+@media screen and (min-width: 768px) {
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+    width: 700px;
+  }
 }
