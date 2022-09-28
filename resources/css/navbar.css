@@ -3,7 +3,7 @@
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
   --card-background: #f4f2f3;
-  --main-font: "Gothic A1", sans-serif;
+  --main-font: "Roboto", sans-serif;
   --sm-margin: 8px;
   --md-margin: 16px;
   --lg-margin: 32px;
@@ -13,44 +13,41 @@
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
 
+/* Header */
+.header {
+  background-color: var(--primary-accent);
+  box-shadow: var(--standard-shadow);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 html{
   scroll-behavior: smooth;
 }
 
-/* Header */
-.header{
-    background-color: var(--primary-accent);
-    box-shadow: var(--standard-shadow);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Logo */
-.logo img{
-    display: inline-block;
-    margin-left: 9px;
-    transform: matrix(0.96, -0.27, 0.28, 0.96, 0, 0);
-    width: 47.14px;
-    height: 43.77px;
-
+.logo img {
+  display: inline-block;
+  margin-left: 9px;
+  transform: matrix(0.96, -0.27, 0.28, 0.96, 0, 0);
+  width: 47.14px;
+  height: 43.77px;
 }
 
 /* Title */
 h1 {
-    font-size: var( --base-font-size);
-    font-family: var( --main-font);
-    font-weight: 900;
-    line-height: 20px;
-    color:  var(--background-color); 
-
+  font-size: 1.2em;
+  font-weight: 900;
+  line-height: 20px;
+  color: var(--background-color);
 }
 
 /* Dropdown list */
 .dropdown_button {
+
     background-color: transparent;
     color: var(--secondary-accent);
     padding: var(--base-padding);
@@ -97,34 +94,35 @@ h1 {
 }
 .menu li a:hover {
   color:  var(--primary-accent);
+
 }
 /* Menu Icon */
 .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 4.5px;
-    background-color: var(--secondary-accent);
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+  display: inline-block;
+  cursor: pointer;
+}
 
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 4.5px;
+  background-color: var(--secondary-accent);
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
 
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
 
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
