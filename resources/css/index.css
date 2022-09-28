@@ -96,11 +96,13 @@ padding-left: 8px;
     padding: 0;
     margin: 0;
     text-align: center;
+    font-weight: bold;
 }
 .ingredient-pics{
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    padding-top: var(--sm-margin);
 
 }
 footer {
