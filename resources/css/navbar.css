@@ -1,20 +1,26 @@
 :root {
-    --primary-accent: #261629;
-    --secondary-accent: #ff9000;
-    --background-color: #f9e3fe;
-    --main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    --sm-margin: 8px;
-    --md-margin: 16px;
-    --lg-margin: 32px;
-    /* add font sizes  
-    add margins*/
-  }
+  --primary-accent: #261629;
+  --secondary-accent: #ff9000;
+  --background-color: #f9e3fe;
+  --card-background: #f4f2f3;
+  --main-font: "Gothic A1", sans-serif;
+  --sm-margin: 8px;
+  --md-margin: 16px;
+  --lg-margin: 32px;
+  --max-margin: 48px;
+  --base-font-size: 16px;
+  --base-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
 
+html{
+  scroll-behavior: smooth;
+}
 
 /* Header */
 .header{
     background-color: var(--primary-accent);
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: var(--standard-shadow);
     position: sticky;
     top: 0;
     width: 100%;
@@ -35,8 +41,8 @@
 
 /* Title */
 h1 {
-    font-size: 16px;
-    font-family: 'Gothic';
+    font-size: var( --base-font-size);
+    font-family: var( --main-font);
     font-weight: 900;
     line-height: 20px;
     color:  var(--background-color); 
@@ -47,12 +53,12 @@ h1 {
 .dropdown_button {
     background-color: transparent;
     color: var(--secondary-accent);
-    padding: 16px;
-    font-size: 16px;
+    padding: var(--base-padding);
+    font-size: var( --base-font-size);
     border: none;
     cursor: pointer;
     width: 100px;
-    font-family: 'Gothic';
+    font-family: var( --main-font);
     border: none;
 }
 
@@ -60,9 +66,10 @@ h1 {
     display: none;
     position: absolute;
     background-color: var(--background-color);
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--standard-shadow);
     z-index: 1;
+    right: 0;
+    min-width: 200px;
 }
 
 .menu li {
@@ -72,7 +79,7 @@ h1 {
     display: block;
     list-style: none;
     background-color: var(--primary-accent);;
-    font-family: 'Gothic';
+    font-family: var( --main-font);
     border: 1px solid var(--background-color);
 }
 
@@ -81,13 +88,16 @@ h1 {
     color: var(--background-color);
     display: block;
     padding: 10px;
+
 }
 
 .menu li:hover {
-    background-color: #0979ad;
-    color: white;
+    background-color: var(--background-color);
+    color:  var(--primary-accent);
 }
-
+.menu li a:hover {
+  color:  var(--primary-accent);
+}
 /* Menu Icon */
 .container {
     display: inline-block;
