@@ -5,26 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/css/index.css" />
+    <link rel="stylesheet" href="resources/css/navbar.css" />
     <title>Lazy Autumn Recipes</title>
   </head>
   <body>
-    <header>
-        <div class = "logo">
-            <img src = "assets/Picture2.png"></img>
-        </div>
-        <h1>LAZY AUTUMN RECIPES</h1>
-        <div class ="header-nav">
-            <button onclick="myFunction()" class="dropbtn"><img src = "assets/Picture1.png"></button>
-            <div id="myDropdown" class = "dropdown-content">
-                <ul>
-                    <li><a href= ></a>Home</li>
-                    <li><a href= ></a>Ingredients</li>
-                    <li><a href= ></a>Recipes</li>
-                    <li><a href= ></a>Contact us</li>
-                </ul>
-            </div>
+
+    <header class="header">
+      <!-- Logo -->
+      <div class = "logo">
+        <img src="assets/Picture2.png" alt="Logo maple">
       </div>
-    </header>
+      <!-- Title -->
+      <h1>LAZY AUTUMN RECIPES</h1>
+      <div class="main">
+        <div class="dropdown_list">
+            <button class="dropdown_button"
+                >
+                <div class="container" onclick="handleMenuDropdown(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </button>
+            </button>
+ 
+            <div id="menu_id" class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Ingredients</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Contact us</a></li>
+            </div>
+        </div>
+      </div>
+
+      
+
+
+  </header>
     <main>
       <h1></h1>
       <div class = "welcome">
@@ -67,6 +84,5 @@
       
       <section id="copyright">&copy; Wilders</section>
     </footer>
-    <script src="resources/js/index.js"></script>
   </body>
 </html>
