@@ -1,0 +1,95 @@
+/*-----Footer styles start here------*/
+footer {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: auto;
+}
+hr {
+  width: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.29);
+  margin-bottom: var(--lg-margin);
+}
+#newsletter-hl {
+  font-size: 1.2em;
+  margin-bottom: var(--md-margin);
+}
+form {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: var(--max-margin);
+  max-width: 25em;
+}
+.input-field {
+  border: none;
+  border-radius: 40px;
+  box-shadow: var(--standard-shadow);
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--md-margin);
+  font-size: 0.8em;
+  padding: var(--sm-margin) var(--md-margin);
+  margin-left: var(--max-margin);
+  margin-right: var(--max-margin);
+}
+.alert {
+  color: red;
+  margin-bottom: var(--md-margin);
+  margin-left: var(--md-margin);
+  margin-right: var(--md-margin);
+}
+.button {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  font-size: 0.7em;
+  padding: var(--md-margin) var(--lg-margin);
+  border-radius: 35px;
+  border-style: none;
+  width: 12em;
+  margin-left: var(--max-margin);
+  margin-right: var(--max-margin);
+  box-shadow: var(--standard-shadow);
+}
+
+/*------style the dialog modal-------*/
+/*sdsadas.dsassd@adssad.de*/
+dialog::backdrop {
+  background: black;
+  opacity: 0.6;
+}
+dialog {
+  border-radius: 20px;
+  border: none;
+  max-width: 500px;
+  width: 80%;
+  box-shadow: 4px 4px 4px black;
+}
+dialog h2 {
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px var(--secondary-accent);
+}
+dialog .button {
+  font-size: 0.8em;
+}
+
+#footer-links {
+  margin-bottom: var(--lg-margin);
+}
+.footer-links {
+  font-size: 1.2em;
+  margin-bottom: var(--sm-margin);
+}
+#copyright {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  font-size: 0.8em;
+  padding: var(--base-padding);
+}
+
+@media screen and (min-width: 768px) {
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+    width: 700px;
+  }
+}
