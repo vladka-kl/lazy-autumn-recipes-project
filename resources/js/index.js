@@ -5,11 +5,8 @@ function handleMenuDropdown(element) {
     courses.style.display = "none";
   } else {
     courses.style.display = "block";
-
   }
 }
-
-
 
 //-----NEWSLETTER SUBSCRIBTION
 //If a user wants to subscribe to the Newsletter pop up a Modal
