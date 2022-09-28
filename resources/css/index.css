@@ -1,5 +1,4 @@
 :root {
-
   --primary-accent: #261629;
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
@@ -66,7 +65,6 @@ h1 {
   height: 2vw;
 }
 .welcome {
-
 font-size: var(--base-font-size);
 font-family: 'Gothic A1', sans-serif;
 display: flex;
@@ -105,6 +103,8 @@ padding-left: 8px;
     padding-top: var(--sm-margin);
 
 }
+
+/*-----Footer styles start here------*/
 footer {
   text-align: center;
   font-weight: lighter;
@@ -136,6 +136,12 @@ form {
   margin-left: var(--max-margin);
   margin-right: var(--max-margin);
 }
+.alert {
+  color: red;
+  margin-bottom: var(--md-margin);
+  margin-left: var(--md-margin);
+  margin-right: var(--md-margin);
+}
 .button {
   background-color: var(--primary-accent);
   color: var(--secondary-accent);
@@ -159,5 +165,17 @@ form {
   color: var(--secondary-accent);
   font-size: 0.8em;
   padding: var(--base-padding);
->>>>>>> 2af91f81d48ebb8c50253dcd6a43b9117cef5316
+
+}
+
+@media screen and (min-width: 768px) {
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+    width: 700px;
+  }
+}
+
 }

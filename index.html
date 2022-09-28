@@ -70,10 +70,15 @@
         <div id="newsletter-hl">Sign up to our Newsletter</div>
         <div id="nl-form">
           <form>
-            <input type="text" id="email" name="email" value="Email address" class="input-field">
-            <input type="button" value="SUBSCRIBE" class="button">
+            <input type="email" id="email" name="email" placeholder="Email address" class="input-field" required>
+            <input type="submit" value="SUBSCRIBE" class="button submit-button">
           </form>
         </div>
+        <dialog class="modal" id="modal">
+          <h2>Thank you for subscribing</h2>
+          <p>Check your email inbox and confirm your subscribtion. Once you've done that we will spam you we irrelevant information as often as possible. How FUN!</p>
+          <button class=" button close-button">Yay, thanks!</button>
+        </dialog>
       </section>
       <hr>
       <section id="footer-links">
@@ -82,7 +87,7 @@
         <div class="footer-links">About us</div>
       </section>
       
-      <section id="copyright">&copy; Wilders</section>
+      <section id="copyright">&copy; Wilders: Vlada, Luis, Robert, Marianne</section>
     </footer>
   </body>
 </html>
