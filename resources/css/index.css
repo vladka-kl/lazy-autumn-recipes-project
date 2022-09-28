@@ -3,7 +3,7 @@
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
   --card-background: #f4f2f3;
-  --main-font: "Roboto", sans-serif;
+  --main-font: "Gothic A1", sans-serif;
   --sm-margin: 8px;
   --md-margin: 16px;
   --lg-margin: 32px;
@@ -29,36 +29,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  background-color: var(--primary-accent);
-  color: var(--background-color);
-  width: 100%;
-  text-align: center;
-  height: 16vw;
-  align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  text-align: end;
-  height: 6vw;
-}
-
-.logo img {
-  height: 11vw;
-  margin-top: 2px;
-}
-
-.dropbtn img {
-  background-color: transparent;
-  border: none;
-  height: 2vw;
-}
 .welcome {
   font-size: var(--base-font-size);
   display: flex;
@@ -96,13 +66,12 @@ header {
   padding-top: var(--sm-margin);
 }
 
-
 /* To-the-top Button */
 
 .to-top {
   font-size: 16px;
   color: black;
-  background:white;
+  background: white;
   position: fixed;
   bottom: 16px;
   right: 32px;
@@ -114,7 +83,7 @@ header {
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 /* To-the-top Button Activated by User */
