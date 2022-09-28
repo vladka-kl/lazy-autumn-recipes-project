@@ -1,4 +1,5 @@
 :root {
+
   --primary-accent: #261629;
   --secondary-accent: #ff9000;
   --background-color: #f9e3fe;
@@ -62,6 +63,15 @@ h1 {
   background-color: transparent;
   border: none;
   height: 2vw;
+}
+.welcome {
+
+font-size: var(--base-font-size);
+font-family: 'Gothic A1', sans-serif;
+display: flex;
+flex-direction: column;
+text-align:left;
+padding-left: 8px;
 }
 footer {
   text-align: center;
