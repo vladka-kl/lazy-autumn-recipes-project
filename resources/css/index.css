@@ -1,70 +1,131 @@
-
 :root {
-    --primary-accent: #261629;
-    --secondary-accent: #ff9000;
-    --background-color: #f9e3fe;
-    --main-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    --sm-margin: 8px;
-    --md-margin: 16px;
-    --lg-margin: 32px;
-    --normal-text: 16px;
-    /* add font sizes  
-    add margins*/
-  }
-  
+
+  --primary-accent: #261629;
+  --secondary-accent: #ff9000;
+  --background-color: #f9e3fe;
+  --card-background: #f4f2f3;
+  --main-font: "Gothic A1", sans-serif;
+  --sm-margin: 8px;
+  --md-margin: 16px;
+  --lg-margin: 32px;
+  --max-margin: 48px;
+  --base-font-size: 16px;
+  --base-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: var(--base-font-size);
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display:flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-color: var( --primary-accent);
-    color: var(--background-color);
-    width: 100%;
-    text-align: center;
-    height: 16vw;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: var(--primary-accent);
+  color: var(--background-color);
+  width: 100%;
+  text-align: center;
+  height: 16vw;
+  align-items: center;
 }
 
 h1 {
-    font-size: 4.7vw;
-    font-family: 'Gothic A1', sans-serif;
+  font-size: 4.7vw;
+  font-family: "Gothic A1", sans-serif;
 }
 
 .header-nav {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: end;
-    height: 6vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: end;
+  height: 6vw;
 }
-
 
 .logo img {
-    height: 11vw;
-    margin-top: 2px;
+  height: 11vw;
+  margin-top: 2px;
 }
 
-.dropbtn img{
-    background-color: transparent;
-    border: none;
-    height: 2vw;
+.dropbtn img {
+  background-color: transparent;
+  border: none;
+  height: 2vw;
 }
+.welcome {
 
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: var(--background-color);
-  }
- .welcome {
-
-font-size: var(--normal-text);
+font-size: var(--base-font-size);
 font-family: 'Gothic A1', sans-serif;
 display: flex;
 flex-direction: column;
 text-align:left;
 padding-left: 8px;
+}
+footer {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: auto;
+  max-width: 600px;
+}
+hr {
+  width: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.29);
+  margin-bottom: var(--md-margin);
+}
+#newsletter-hl {
+  font-size: 1.2em;
+  margin-bottom: var(--md-margin);
+}
+form {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: var(--max-margin);
+  max-width: 25em;
+}
+.input-field {
+  border: none;
+  border-radius: 40px;
+  box-shadow: var(--standard-shadow);
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--md-margin);
+  font-size: 0.8em;
+  padding: var(--sm-margin) var(--md-margin);
+  margin-left: var(--max-margin);
+  margin-right: var(--max-margin);
+}
+.button {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  font-size: 0.7em;
+  padding: var(--md-margin) var(--lg-margin);
+  border-radius: 35px;
+  border-style: none;
+  width: 12em;
+  margin-left: var(--max-margin);
+  margin-right: var(--max-margin);
+}
+#footer-links {
+  margin-bottom: var(--lg-margin);
+}
+.footer-links {
+  font-size: 1.2em;
+  margin-bottom: var(--sm-margin);
+}
+#copyright {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  font-size: 0.8em;
+  padding: var(--base-padding);
 }
