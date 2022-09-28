@@ -71,6 +71,8 @@ h1 {
   text-align: left;
   padding-left: 8px;
 }
+
+/*-----Footer styles start here------*/
 footer {
   text-align: center;
   font-weight: lighter;
@@ -101,6 +103,12 @@ form {
   padding: var(--sm-margin) var(--md-margin);
   margin-left: var(--max-margin);
   margin-right: var(--max-margin);
+}
+.alert {
+  color: red;
+  margin-bottom: var(--md-margin);
+  margin-left: var(--md-margin);
+  margin-right: var(--md-margin);
 }
 .button {
   background-color: var(--primary-accent);
