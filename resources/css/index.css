@@ -170,7 +170,7 @@ h3 {
   margin-bottom: var(--lg-margin);
 }
 
-p {
+.description {
   color: var(--primary-accent);
   font-size: 1em;
   padding-left: 8%;
