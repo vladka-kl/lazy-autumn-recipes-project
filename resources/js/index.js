@@ -11,16 +11,17 @@ function handleMenuDropdown(element) {
 
 // Button to the top
 // Appears after the page has been scrolled down 50px from the top
-const toTheTopButton = document.querySelector(".to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 50) {
-    toTheTopButton.classList.add("active");
-  } else {
-    toTheTopButton.classList.remove("active");
-  }
-});
-
+// function handleButtonTop (element) {
+//   element.classList.toggle("change");
+//   const toTheTopButton = document.querySelector(".to-top");
+//   document.addEventListener("scroll", () => {
+//     if (window.pageYOffset > 50) {
+//       toTheTopButton.classList.add("active");
+//     } else {
+//       toTheTopButton.classList.remove("active");
+//     }
+//   });
+// }
 //-----NEWSLETTER SUBSCRIBTION
 //If a user wants to subscribe to the Newsletter pop up a Modal
 const modal = document.querySelector("#modal");

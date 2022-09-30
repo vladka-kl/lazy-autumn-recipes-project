@@ -146,17 +146,37 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
 }
 
 /* To-the-top Button Activated by User */
-.to-top.active {
+/* .to-top.active {
   opacity: 1;
   pointer-events: auto;
   bottom: 32px;
+} */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
+/* .scrollToTop {   
+  position: fixed;   
+  bottom: 10%;
+  right: 10%; 
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: var(--secondary-accent); 
+  border: 2px solid #fff;
+  border-radius: 50%; 
+  font: bold 20px monospace;  
+  transition: opacity 0.5s, transform 0.5s;
+} */
 
 
 @media screen and (min-width: 768px) {
