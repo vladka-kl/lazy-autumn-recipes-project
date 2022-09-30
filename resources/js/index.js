@@ -9,9 +9,9 @@ function handleMenuDropdown(element) {
   }
 }
 
-// Button to the top 
+// Button to the top
 // Appears after the page has been scrolled down 50px from the top
-const toTheTopButton = document.querySelector(".to-top")
+const toTheTopButton = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 50) {
@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
   } else {
     toTheTopButton.classList.remove("active");
   }
-})
+});
 
 //-----NEWSLETTER SUBSCRIBTION
 //If a user wants to subscribe to the Newsletter pop up a Modal

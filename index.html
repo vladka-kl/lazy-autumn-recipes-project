@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons8-cucumber-color-16.png">
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/navbar.css" />
+    <link rel="stylesheet" href="resources/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
     <title>Lazy Autumn Recipes</title>
     <script src="https://kit.fontawesome.com/78afca721f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-
     <header class="header">
       <div class="logo">
         <img src="assets/Picture2.png" alt="Logo maple">
@@ -38,15 +42,15 @@
     </header>
 
     <main>
-      <h1></h1>
       <div class = "welcome">
-        <p>Welcome to our recipe website, you have already fulfilled the first requisite to be here, which is to be a <span style= color:#ff9000>lazy</span>  ass cook.</p>
-        <p>
-          We will present you three easy-peasy recipes for each ingredient you choose.
-          Please have a look at it!</p>
+
+
+        <p>Welcome to our recipe website, you have already fulfilled the first requisite to be here, which is to be a <span style= color:#ff9000>lazy</span>  ass cook.
+        </br>We will present you three easy-piecy recipes for each ingredient you choose.
+          Please have at it!</p>
       </div>
-      <section id="ingredient-selection">
-        <p class = "ingredient-title">CHOOSE YOUR INGREDIENT</p>
+      <section>
+        <div class = "ingredient-title">CHOOSE YOUR INGREDIENT</div>
         <ul class="ingredients-selection">
             <li><a style="text-decoration: none;" href="#turnip-recipes"><p class="ingredient-headline">Turnip</p><img src= "assets/thumb-matilda-bellman-p7R7zdTXXH4-unsplash.jpeg" alt="Turnip" class ="ingredient-pics"></a></li>
 
@@ -55,10 +59,26 @@
             <li><a style="text-decoration: none;" href="#zucchini-recipes"><p class="ingredient-headline">Zucchini</p><img src="assets/thumb-edson-rosas-T78BW9onx-I-unsplash.jpeg" alt="Zucchini" class ="ingredient-pics"></a></li>
         </ul>
       </section>
+      <div class = "ingredient-title">OUR RECIPES</div>
       <section id="recipes">
+<!-- for later to make the Ingredient Selection work
         <p id="turnip-recipes"></p>
         <p id="pumpkin-recipes"></p>
-        <p id="zucchini-recipes"></p>
+        <p id="zucchini-recipes"></p> -->
+
+        <name>Super nice recipe</name>
+        <img src= assets/recipe.jpg alt="recipe image"></img>
+        <h3>Ingredients</h3>
+        <ul>
+          <li>½ cup butter</li>
+          <li>1 cup brown sugar</li>
+          <li>5 Granny Smith apples -- peeled, cored, quartered, and thinly sliced</li>
+          <li>3 (9 inch) refrigerated pre-rolled pie crusts</li>
+          <li>1 cup white sugar, divided</li>
+        </ul>
+        <h3>Instructions</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
       </section>
     </main>
     <footer>
@@ -74,7 +94,7 @@
         <dialog class="modal" id="modal">
           <h2>Thank you for subscribing</h2>
           <p>Check your email inbox and confirm your subscribtion. Once you've done that we will spam you we irrelevant information as often as possible. How FUN!</p>
-          <button class=" button close-button">Yay, thanks!</button>
+          <button class=" button close-button">YAY, THANKS!</button>
         </dialog>
       </section>
       <hr>
