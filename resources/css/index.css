@@ -30,16 +30,18 @@ body {
 }
 
 .welcome {
-  font-size: var(--base-font-size);
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: var(--lg-margin);
+  padding: 0 var(--lg-margin);
   background-image: url(/assets/scott-webb-p2RtURPMBJE-unsplash.jpeg);
   background-size: cover;
   background-position: bottom;
+}
+.welcome p {
+  font-size: var(--base-font-size);
+  color: white;
 }
 .ingredient-title {
   background-color: var(--secondary-accent);
@@ -97,4 +99,53 @@ body {
   opacity: 1;
   pointer-events: auto;
   bottom: 32px;
+}
+
+/* Recipe Section */
+
+#recipes {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--card-background);
+  gap: var(--md-margin);
+  border-radius: 5%;
+  max-width: 90%;
+  margin: auto;
+}
+
+name {
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: var(--primary-accent);
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 1rem;
+}
+
+#recipes img {
+  max-width: 90%;
+  height: auto;
+  align-self: center;
+}
+
+h3 {
+  color: var(--primary-accent);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+#recipes ul {
+  color: var(--primary-accent);
+  font-size: 1rem;
+  padding-left: 10%;
+  max-width: 90%;
+}
+
+p {
+  color: var(--primary-accent);
+  font-size: 1rem;
+  padding-left: 8%;
+  max-width: 90%;
+  padding-bottom: 5%;
 }
