@@ -121,9 +121,7 @@ padding-left: 8px;
   bottom: 32px;
 }
 
-
 /* Recipe Section */
-
 #recipes {
   display: flex;
   flex-flow: column wrap;
@@ -147,7 +145,6 @@ name {
   max-width: 90%;
   height: auto;
   align-self: center;
-
 }
 
 h3 {
@@ -156,7 +153,6 @@ h3 {
   font-weight: bold;
   padding-left: 5%;
 }
-
 
 #recipes ul {
   color: var(--primary-accent);
@@ -171,5 +167,4 @@ p {
   padding-left: 8%;
   max-width: 90%;
   padding-bottom: 5%;
-
 }
