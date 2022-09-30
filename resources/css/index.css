@@ -1,6 +1,6 @@
 :root {
   --primary-accent: #261629;
-  --secondary-accent: #ff9000;
+  --secondary-accent: #ffffff;
   --background-color: #f9e3fe;
   --card-background: #f4f2f3;
   --main-font: "Gothic A1", sans-serif;
@@ -35,6 +35,7 @@ body {
   justify-content: space-around;
   text-align: left;
   padding: 0 var(--lg-margin);
+  margin-bottom: var(--md-margin);
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
   background-position: bottom;
@@ -46,9 +47,9 @@ body {
 
 /*-----Ingredient Selection start here------*/
 .ingredient-title {
-  background-color: var(--secondary-accent);
+  background-color: var(--background-color);
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   font-size: var(--section-font-size);
   font-weight: bold;
