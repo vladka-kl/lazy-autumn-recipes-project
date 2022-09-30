@@ -64,6 +64,7 @@ h1 {
   border: none;
   height: 2vw;
 }
+/*-----Welcome Section start here------*/
 .welcome {
 font-size: var(--base-font-size);
 font-family: 'Gothic A1', sans-serif;
@@ -73,6 +74,7 @@ justify-content: space-around;
 text-align:left;
 padding-left: 8px;
 }
+/*-----Ingredient Selection start here------*/
 .ingredient-title{
     background-color: var(--secondary-accent);
     display: flex;
@@ -82,25 +84,31 @@ padding-left: 8px;
     font-weight: bold;
     height: 48px;
     padding-left: 8px;
-
+    }
+    .ingredient-headline{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      color: var(--primary-accent);
+      
     
-}
+    }
 .ingredients-selection {
     display:flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
-    text-align: center;
     font-weight: bold;
+    margin-bottom: var(--sm-margin);
+    text-decoration: none;
 }
 .ingredient-pics{
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    padding-top: var(--sm-margin);
+    
 
 }
 
@@ -168,35 +176,6 @@ form {
 
 }
 
-/* To-the-top Button */
-
-.to-top {
-  font-size: 16px;
-  color: black;
-  background:white;
-  position: fixed;
-  bottom: 16px;
-  right: 32px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all .4s;
-}
-
-/* To-the-top Button Activated by User */
-.to-top.active {
-  opacity: 1;
-  pointer-events: auto;
-  bottom: 32px;
-}
-
-
-
 @media screen and (min-width: 768px) {
   #footer-links {
     display: flex;
@@ -206,6 +185,5 @@ form {
     width: 700px;
   }
 }
-
 
 
