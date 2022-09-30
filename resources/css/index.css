@@ -43,36 +43,56 @@ body {
   font-size: var(--base-font-size);
   color: white;
 }
-.ingredient-title {
-  background-color: var(--secondary-accent);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: var(--section-font-size);
-  font-weight: bold;
-  padding: var(--base-padding);
-  margin: 0;
-  margin-bottom: var(--md-margin);
-  box-shadow: var(--standard-shadow);
+
+/*-----Welcome Section start here------*/
+.welcome {
+font-size: var(--base-font-size);
+font-family: 'Gothic A1', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align:left;
+padding-left: 8px;
 }
+/*-----Ingredient Selection start here------*/
+.ingredient-title{
+    background-color: var(--secondary-accent);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    font-size: var(--section-font-size);
+    font-weight: bold;
+    height: 48px;
+    padding-left: 8px;
+    }
+    .ingredient-headline{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      color: var(--primary-accent);
+      
+    
+    }
 .ingredients-selection {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-weight: bold;
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: var(--sm-margin);
+    text-decoration: none;
+}
+.ingredient-pics{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+
 }
 
-.ingredient-pics {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  padding-top: var(--sm-margin);
-}
+
 
 /* To-the-top Button */
 
