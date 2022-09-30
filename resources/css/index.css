@@ -28,14 +28,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+/*-----Welcome Section start here------*/
 .welcome {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
   padding: 0 var(--lg-margin);
-  padding-top: var(--lg-margin);
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
   background-position: bottom;
@@ -45,16 +44,6 @@ body {
   color: white;
 }
 
-/*-----Welcome Section start here------*/
-.welcome {
-  font-size: var(--base-font-size);
-  font-family: "Gothic A1", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: left;
-  padding-left: 8px;
-}
 /*-----Ingredient Selection start here------*/
 .ingredient-title {
   background-color: var(--secondary-accent);
@@ -84,7 +73,7 @@ body {
   padding: 0;
   margin: 0;
   font-weight: bold;
-  margin-bottom: var(--sm-margin);
+  margin-bottom: var(--lg-margin);
   text-decoration: none;
 }
 .ingredient-pics {
