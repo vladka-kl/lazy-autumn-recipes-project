@@ -35,6 +35,7 @@ body {
   justify-content: space-around;
   text-align: left;
   padding: 0 var(--lg-margin);
+  padding-top: var(--lg-margin);
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
   background-position: bottom;
@@ -43,6 +44,18 @@ body {
   font-size: var(--base-font-size);
   color: white;
 }
+
+/*-----Welcome Section start here------*/
+.welcome {
+  font-size: var(--base-font-size);
+  font-family: "Gothic A1", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  padding-left: 8px;
+}
+/*-----Ingredient Selection start here------*/
 .ingredient-title {
   background-color: var(--secondary-accent);
   display: flex;
@@ -50,28 +63,34 @@ body {
   align-items: center;
   font-size: var(--section-font-size);
   font-weight: bold;
-  padding: var(--base-padding);
-  margin: 0;
+  height: 48px;
+  padding-left: 8px;
   margin-bottom: var(--md-margin);
-  box-shadow: var(--standard-shadow);
+}
+.ingredient-headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--primary-accent);
+  padding: 0;
+  margin: 0;
+  margin-bottom: var(--sm-margin);
 }
 .ingredients-selection {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   padding: 0;
   margin: 0;
-  text-align: center;
   font-weight: bold;
+  margin-bottom: var(--sm-margin);
+  text-decoration: none;
 }
-
 .ingredient-pics {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  padding-top: var(--sm-margin);
 }
 
 /* To-the-top Button */
@@ -101,55 +120,65 @@ body {
   bottom: 32px;
 }
 
-
 /* Recipe Section */
-
 #recipes {
   display: flex;
   flex-flow: column wrap;
   background-color: var(--card-background);
-  gap: var(--md-margin);
-  border-radius: 5%;
-  max-width: 90%;
-  margin: auto;
+  border-radius: 20px;
+  box-shadow: var(--standard-shadow);
+  margin: var(--sm-margin);
+  margin-top: 0;
+  margin-bottom: var(--max-margin);
 }
 
 name {
-  font-size: 3.5vw;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--primary-accent);
-  padding-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 1rem;
+  margin-top: var(--md-margin);
+  margin-bottom: var(--md-margin);
+  padding-left: var(--md-margin);
 }
 
 #recipes img {
   max-width: 90%;
+  margin-left: var(--sm-margin);
+  margin-right: var(--sm-margin);
   height: auto;
   align-self: center;
-
+  margin-bottom: var(--lg-margin);
 }
 
 h3 {
   color: var(--primary-accent);
   font-size: 1rem;
   font-weight: bold;
-  padding-left: 5%;
+  padding: 0;
+  margin: 0;
+  padding-left: var(--md-margin);
+  margin-bottom: var(--sm-margin);
 }
-
 
 #recipes ul {
   color: var(--primary-accent);
-  font-size: 1rem;
-  padding-left: 10%;
-  max-width: 90%;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  padding-left: var(--lg-margin);
+  padding-right: var(--md-margin);
+  margin-bottom: var(--lg-margin);
 }
 
 p {
   color: var(--primary-accent);
-  font-size: 1rem;
+  font-size: 1em;
   padding-left: 8%;
   max-width: 90%;
   padding-bottom: 5%;
-
+  padding: 0;
+  margin: 0;
+  padding-left: var(--md-margin);
+  padding-right: var(--md-margin);
+  margin-bottom: var(--lg-margin);
 }
