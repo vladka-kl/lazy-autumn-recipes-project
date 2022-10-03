@@ -9,19 +9,30 @@ function handleMenuDropdown(element) {
   }
 }
 
-// Button to the top
-// Appears after the page has been scrolled down 50px from the top
-// function handleButtonTop (element) {
-//   element.classList.toggle("change");
-//   const toTheTopButton = document.querySelector(".to-top");
-//   document.addEventListener("scroll", () => {
-//     if (window.pageYOffset > 50) {
-//       toTheTopButton.classList.add("active");
-//     } else {
-//       toTheTopButton.classList.remove("active");
-//     }
-//   });
-// }
+// ------TO TOP BUTTON
+// Appears after the page has been scrolled 80% down the total height of the page
+function handleScroll() {
+  const scrollToTopBtn = document.querySelector(".scrollToTop");
+  // The total amount of pixels can be scrolled
+  const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  if (document.documentElement.scrollTop / scrollTotal > 0.8) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn");
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn");
+  }
+  function scrollToTop() {
+    // Scroll to top
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  scrollToTopBtn.addEventListener("click", scrollToTop);
+}
+document.addEventListener("scroll", handleScroll);
+
 //-----NEWSLETTER SUBSCRIBTION
 //If a user wants to subscribe to the Newsletter pop up a Modal
 const modal = document.querySelector("#modal");

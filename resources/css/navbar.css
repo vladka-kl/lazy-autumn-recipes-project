@@ -52,7 +52,8 @@ h1 {
   box-shadow: var(--standard-shadow);
   z-index: 1;
   right: 0;
-  min-width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 .menu li {
