@@ -5,28 +5,28 @@ html {
 /* Header */
 .header {
   background-color: var(--primary-accent);
-  box-shadow: var(--standard-shadow);
   position: sticky;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--sm-margin) var(--md-margin);
+  z-index: 1;
 }
 
 /* Logo */
 .logo img {
   display: inline-block;
-  margin-left: 9px;
   transform: matrix(0.96, -0.27, 0.28, 0.96, 0, 0);
-  width: 47.14px;
-  height: 43.77px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Title */
 h1 {
-  font-size: var(--base-font-size);
-  font-family: var(--main-font);
+  font-size: var(--sm-text);
+  font-family: var(--accent-font);
   font-weight: 900;
   line-height: 20px;
   color: var(--background-color);
@@ -36,11 +36,10 @@ h1 {
 .dropdown_button {
   background-color: transparent;
   color: var(--secondary-accent);
-  padding: var(--base-padding);
-  font-size: var(--base-font-size);
+  font-size: var(--md-text);
   border: none;
   cursor: pointer;
-  width: 100px;
+  width: auto;
   font-family: var(--main-font);
   border: none;
 }
@@ -62,7 +61,7 @@ h1 {
   display: block;
   list-style: none;
   background-color: var(--primary-accent);
-  font-family: var(--main-font);
+  font-size: var(--md-text);
   border: 1px solid var(--background-color);
 }
 
