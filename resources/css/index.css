@@ -1,7 +1,7 @@
 :root {
-  --primary-accent: #261629;
-  --secondary-accent: #ff9000;
-  --background-color: #f9e3fe;
+  --primary-accent: #3f624e;
+  --secondary-accent: #cd8e58;
+  --background-color: #f2ebe4;
   --card-background: #f4f2f3;
   --main-font: "Gothic A1", sans-serif;
   --sm-margin: 8px;
@@ -14,6 +14,7 @@
   --lg-font: 24px;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+  --accent-shadow: 2px 2px 4px var(--secondary-accent);
 }
 
 * {
@@ -41,31 +42,35 @@ body {
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
   background-position: bottom;
+  min-height: 60vh;
+  margin-bottom: var(--lg-margin);
 }
 .welcome p {
   font-size: var(--md-font);
   color: white;
 }
 
-
 /*-----Ingredient Selection start here------*/
 .ingredient-title {
-  background-color: var(--secondary-accent);
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   font-size: var(--lg-font);
   font-weight: bold;
+  color: var(--primary-accent);
   height: 48px;
   padding-left: 8px;
   margin-bottom: var(--md-margin);
+  /* text-shadow: var(--accent-shadow); */
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-accent);
 }
 .ingredient-headline {
   display: flex;
   font-size: var(--md-font);
   flex-direction: row;
   justify-content: space-around;
-  color: var(--primary-accent);
+  color: black;
   padding: 0;
   margin: 0;
   margin-bottom: var(--sm-margin);
@@ -78,25 +83,27 @@ body {
   padding: 0;
   margin: 0;
   font-weight: bold;
-  margin-bottom: var(--lg-margin);
+  margin-bottom: var(--max-margin);
   text-decoration: none;
 }
-.ingredient-pics { 
-position: relative;
-height: 100px;
-width: 100px;
-overflow: hidden;
-border-radius: 50%;
-z-index: -1;
+.ingredient-pics {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: -1;
 }
-.ingredient-pics img { width: 100%; height: auto; }
-
+.ingredient-pics img {
+  width: 100%;
+  height: auto;
+}
 
 /* ------TO TOP BUTTON */
-.scrollToTop {   
-  position: fixed;   
+.scrollToTop {
+  position: fixed;
   bottom: 10%;
-  right: 10%; 
+  right: 10%;
   width: 40px;
   z-index: 100;
   opacity: 0;
@@ -104,17 +111,16 @@ z-index: -1;
   transition: all 0.5s ease;
   height: 40px;
   color: #fff;
-  background-color: var(--secondary-accent); 
+  background-color: var(--secondary-accent);
   border: 2px solid #fff;
-  border-radius: 50%; 
-  font: bold 20px monospace;  
+  border-radius: 50%;
+  font: bold 20px monospace;
 }
 
 .showBtn {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 /* Recipe Section */
 #recipes {
@@ -157,7 +163,6 @@ h3 {
 }
 
 #recipes ul {
-  color: var(--primary-accent);
   font-size: var(--sm-font);
   padding: 0;
   margin: 0;
@@ -167,7 +172,6 @@ h3 {
 }
 
 .description {
-  color: var(--primary-accent);
   font-size: var(--sm-font);
   padding-left: 8%;
   max-width: 90%;
