@@ -136,18 +136,10 @@ justify-content: center;
   color: var(--primary-accent);
   margin-top: var(--md-margin);
   margin-bottom: var(--md-margin);
-  /*padding-left: var(--md-margin);
-  padding-top: var(--md-margin);*/
+
 }
 
-/*#recipes img {
-  max-width: 90%;
-  margin-left: var(--sm-margin);
-  margin-right: var(--sm-margin);
-  height: auto;
-  align-self: center;
-  margin-bottom: var(--lg-margin);
-} */
+
 
 .recipes-pics {
   display: block;
