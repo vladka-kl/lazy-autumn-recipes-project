@@ -1,17 +1,18 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 /* Header */
 .header {
   background-color: var(--primary-accent);
-  box-shadow: var(--standard-shadow);
   position: sticky;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 /* Logo */
@@ -28,7 +29,7 @@ html {
  }
 /* Title */
 h1 {
-  font-size: var(--base-font-size);
+  font-size: var(--sm-font);
   font-family: var(--main-font);
   font-weight: 900;
   line-height: 20px;
@@ -40,11 +41,10 @@ h1 {
   background-color: transparent;
   color: var(--secondary-accent);
   padding: var(--base-padding);
-  font-size: var(--base-font-size);
+  font-size: var(--md-font);
   border: none;
   cursor: pointer;
   width: 100px;
-  font-family: var(--main-font);
   border: none;
 }
 
@@ -66,7 +66,6 @@ h1 {
   display: block;
   list-style: none;
   background-color: var(--primary-accent);
-  font-family: var(--main-font);
   border: 1px solid var(--background-color);
 }
 
