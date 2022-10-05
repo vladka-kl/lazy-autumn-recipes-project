@@ -12,12 +12,12 @@ function handleMenuDropdown(element) {
 
 
 // ------TO TOP BUTTON
-// Appears after the page has been scrolled 80% down the total height of the page
+// Appears after the page has been scrolled 50% down the total height of the page
 function handleScroll() {
   const scrollToTopBtn = document.querySelector(".scrollToTop");
   // The total amount of pixels can be scrolled
   const scrollTotal = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  if (document.documentElement.scrollTop / scrollTotal > 0.8) {
+  if (document.documentElement.scrollTop / scrollTotal > 0.5) {
     // Show button
     scrollToTopBtn.classList.add("showBtn");
   } else {
