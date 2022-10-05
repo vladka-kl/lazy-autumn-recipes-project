@@ -4,6 +4,7 @@
   --background-color: #fcefef;
   --card-background: #f4f2f3;
   --main-font: "Gothic A1", sans-serif;
+  --accent-font: "Gothic A1", sans-serif;
   --sm-margin: 8px;
   --md-margin: 16px;
   --lg-margin: 32px;
@@ -41,7 +42,7 @@ body {
   padding: 0 var(--lg-margin);
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   min-height: 50vh;
   margin-bottom: var(--lg-margin);
 }
@@ -53,6 +54,7 @@ body {
 /*-----Ingredient Selection start here------*/
 .ingredient-title {
   display: flex;
+  font-family: var(--accent-font);
   justify-content: center;
   align-items: center;
   font-size: var(--lg-font);
@@ -61,7 +63,6 @@ body {
   height: 48px;
   padding-left: 8px;
   margin-bottom: var(--md-margin);
-  /* text-shadow: var(--accent-shadow); */
   text-decoration: underline;
   text-decoration-color: var(--secondary-accent);
 }
@@ -93,6 +94,7 @@ body {
   overflow: hidden;
   border-radius: 50%;
   z-index: -1;
+  box-shadow: var(--standard-shadow);
 }
 .ingredient-pics img {
   width: 100%;
@@ -122,7 +124,7 @@ body {
   transform: translateY(0);
 }
 
-/* Recipe Section */
+/* -------Recipe Section------- */
 #recipes {
   display: flex;
   flex-flow: column wrap;
