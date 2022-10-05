@@ -128,7 +128,6 @@ body {
   transform: translateY(0);
 }
 
-<<<<<<< HEAD
 
 @media screen and (min-width: 768px) {
   #footer-links {
@@ -148,9 +147,7 @@ body {
 }
 
 /* Recipe Section */
-=======
 /* -------Recipe Section------ */
->>>>>>> 9539d0620da52a80380cb966d65978cd083993b1
 #recipes {
   display: flex;
   flex-flow: column wrap;
