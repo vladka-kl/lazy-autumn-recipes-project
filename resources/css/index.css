@@ -76,11 +76,15 @@ body {
   margin-bottom: var(--lg-margin);
   text-decoration: none;
 }
-.ingredient-pics {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+.ingredient-pics { 
+position: relative;
+height: 100px;
+width: 100px;
+overflow: hidden;
+border-radius: 50%;
+z-index: -1;
 }
+.ingredient-pics img { width: 100%; height: auto; }
 
 /* Recipe Section */
 #recipes {
