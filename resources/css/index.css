@@ -143,10 +143,7 @@ justify-content: center;
   color: var(--primary-accent);
   margin-top: var(--md-margin);
   margin-bottom: var(--md-margin);
-
 }
-
-
 
 .recipes-pics {
   display: block;
@@ -154,7 +151,7 @@ justify-content: center;
   margin-right: auto;
   margin-bottom: var(--sm-margin);
 position: relative;
-height: 250px;
+height: auto;
 width: 90%;
 object-fit: cover;
 }
