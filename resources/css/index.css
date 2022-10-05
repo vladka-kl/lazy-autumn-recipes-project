@@ -49,6 +49,7 @@ body {
 .welcome p {
   font-size: var(--md-font);
   color: white;
+  text-shadow: 1px 1px 2px black;
 }
 .lazy {
   color: var(--secondary-accent);
