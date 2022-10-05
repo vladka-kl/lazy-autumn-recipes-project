@@ -40,7 +40,7 @@ body {
   text-align: left;
   font-size: var(--sm-font);
   padding: 0 var(--lg-margin);
-  background-image: url(/assets/teaser-image.jpeg);
+  background-image: url(assets/teaser-image.jpeg);
   background-size: cover;
   background-position: center;
   min-height: 50vh;
@@ -49,6 +49,7 @@ body {
 .welcome p {
   font-size: var(--md-font);
   color: white;
+  text-shadow: 1px 1px 2px black;
 }
 .lazy {
   color: var(--secondary-accent);
