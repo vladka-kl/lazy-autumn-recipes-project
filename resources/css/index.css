@@ -71,6 +71,7 @@ body {
 }
 .ingredient-headline {
   display: flex;
+  font-size: var(--md-font);
   flex-direction: row;
   justify-content: space-around;
   color: var(--primary-accent);
@@ -154,7 +155,7 @@ name {
 
 h3 {
   color: var(--primary-accent);
-  font-size: 1rem;
+  font-size: var(--sm-font);
   font-weight: bold;
   padding: 0;
   margin: 0;
