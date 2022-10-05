@@ -50,6 +50,10 @@ body {
   font-size: var(--md-font);
   color: white;
 }
+.lazy {
+  color: var(--secondary-accent);
+  font-size: var(--lg-font);
+}
 
 /*-----Ingredient Selection start here------*/
 .ingredient-title {
@@ -128,11 +132,11 @@ body {
 #recipes {
   display: flex;
   flex-flow: column wrap;
+  width: 95%;
   background-color: var(--card-background);
   border-radius: 20px;
   box-shadow: var(--standard-shadow);
-  margin: var(--sm-margin);
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: var(--max-margin);
 }
 
@@ -183,4 +187,21 @@ h3 {
   padding-left: var(--md-margin);
   padding-right: var(--md-margin);
   margin-bottom: var(--lg-margin);
+}
+
+@media screen and (min-width: 768px) {
+  .welcome p {
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: var(--lg-font);
+    line-height: 1.3em;
+  }
+  .ingredients-selection {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+  }
+  #recipes {
+    max-width: 70%;
+  }
 }
