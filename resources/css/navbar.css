@@ -41,7 +41,6 @@ h1 {
   border: none;
   cursor: pointer;
   width: 100px;
-  font-family: var(--main-font);
   border: none;
 }
 
@@ -63,7 +62,6 @@ h1 {
   display: block;
   list-style: none;
   background-color: var(--primary-accent);
-  font-family: var(--main-font);
   border: 1px solid var(--background-color);
 }
 
