@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/icons8-cucumber-color-16.png">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/navbar.css" />
     <link rel="stylesheet" href="resources/css/footer.css">
@@ -18,7 +18,7 @@
     <header class="header">
       <div class="containerLogo">
       <div class="logo">
-        <img src="assets/Picture2.png" alt="Logo maple">
+        <img src="assets/logo.png" alt="Logo maple">
       </div>
       <h1>LAZY AUTUMN RECIPES</h1>
       </div>
@@ -44,44 +44,115 @@
     </header>
 
     <main>
-      <div class = "welcome">
+      <div  id="welcome" class = "welcome">
 
 
-        <p>Welcome to our recipe website, you have already fulfilled the first requisite to be here, which is to be a <span style= color:#ff9000>lazy</span>  ass cook.
+        <p>Welcome to our recipe website, you have already fulfilled the first requisite to be here, which is to be a <span class="lazy">lazy</span>  ass cook.
         </br>We will present you three easy-piecy recipes for each ingredient you choose.
           Please have at it!</p>
       </div>
       <section>
-        <div class = "ingredient-title">CHOOSE YOUR INGREDIENT</div>
+        <div id="ingredients-selection" class = "ingredient-title">CHOOSE YOUR INGREDIENT</div>
         <ul class="ingredients-selection">
-            <li><a style="text-decoration: none;" href="#turnip-recipes"><p class="ingredient-headline">Turnip</p><img src= "assets/thumb-matilda-bellman-p7R7zdTXXH4-unsplash.jpeg" alt="Turnip" class ="ingredient-pics"></a></li>
+            <li><a style="text-decoration: none;" href="#turnip-recipes" ><p class="ingredient-headline" >Turnip</p><div class="ingredient-pics"><img src= "assets/TurnipsPic.jpg" alt="Turnip" ></div></a></li>
 
-            <li><a style="text-decoration: none;" href="#pumpkin-recipes"><p class="ingredient-headline">Pumpkin</p><img src="assets/thumb-kerstin-wrba-zeInZepl_Hw-unsplash.jpeg" class ="ingredient-pics" alt="Pumpkin"></a></li>
+            <li><a style="text-decoration: none;" href="#pumpkin-recipes"><p class="ingredient-headline">Pumpkin</p><div class ="ingredient-pics"><img src="assets/thumb-kerstin-wrba-zeInZepl_Hw-unsplash.jpeg"  alt="Pumpkin"></div></a></li>
 
-            <li><a style="text-decoration: none;" href="#zucchini-recipes"><p class="ingredient-headline">Zucchini</p><img src="assets/thumb-edson-rosas-T78BW9onx-I-unsplash.jpeg" alt="Zucchini" class ="ingredient-pics"></a></li>
+            <li><a style="text-decoration: none;" href="#zucchini-recipes"><p class="ingredient-headline">Zucchini</p><div class ="ingredient-pics"><img src="assets/thumb-edson-rosas-T78BW9onx-I-unsplash.jpeg" alt="Zucchini" ></div></a></li>
         </ul>
       </section>
+      <!-- <hr> -->
       <div class = "ingredient-title">OUR RECIPES</div> 
       <section id="recipes">
-<!-- for later to make the Ingredient Selection work
-        <p id="turnip-recipes"></p>
-        <p id="pumpkin-recipes"></p>
-        <p id="zucchini-recipes"></p> -->
-
-        <name>Super nice recipe</name>
-        <img src= assets/recipe.jpg alt="recipe image"></img>
+        <div id="turnip-recipes">
+          <name class="recipe-name" >Turnips with caramelized Onions and Lentils</name>
+        <img src= "assets/turnip-dish.jpg" alt="recipe image" class="recipes-pics" ></img>
         <h3>Ingredients</h3>
         <ul>
-          <li>½ cup butter</li>
-          <li>1 cup brown sugar</li>
-          <li>5 Granny Smith apples -- peeled, cored, quartered, and thinly sliced</li>
-          <li>3 (9 inch) refrigerated pre-rolled pie crusts</li>
-          <li>1 cup white sugar, divided</li>
+          <li>2 tablespoons olive oil</li>
+          <li>1 teaspoon cumin seeds</li>
+          <li>1 medium-sized red onion, thinly sliced</li>
+          <li>3 pods garlic, very finely chopped</li>
+          <li>11/2 tablespoons split yellow moong lentils (soaked for 1 hour)</li>
+          <li>3/4 cup small fresh turnips, halved</li>
+          <li>1/2 teaspoon turmeric</li>
+          <li>Salt to taste</li>
+          <li>1/2 teaspoon red cayenne powder</li>
+          <li>1 cup of turnip greens, chopped</li>
+          <li>1 tablespoon chopped cilantro to garnish</li>
         </ul>
         <h3>Instructions</h3>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="description">Heat the oil and add in the cumin seeds and wait until the seeds begin to sizzle.
+          Add in the red onion and cook the onion until it is a pale toffee color and the kitchen begins to smell softly fragrant.<br/>
+          <br/>
+          Add in the garlic and saute lightly for another two to three minutes.<br>
+          Add in the lentils and cook for 2 to 3 minutes until the lentils are nice and toasty and a few shades darker.<br/>
+          <br/>
+          Add in the turnips and mix in gently. Stir in the turmeric, salt, and red cayenne powder and mix well. Cook lightly until the turnips are soft and shimmering.<br/>
+          <br/>
+          Mix in the turnip greens and cook until the greens are wilted.
+          Stir in the cilantro and garnish.
+          </p>
+        </div>
+      </section>
+        <section id="recipes">
+        <div id="pumpkin-recipes">
+          <name class="recipe-name" >Vegan Pumpkin Curry Soup</name>
+        <img src= "assets/pumpkin-dish.jpg" alt="recipe image" class="recipes-pics"></img>
+        <h3>Ingredients</h3>
+        <ul>
+          <li>2 pounds pumpkin skin and seeds removed, chopped</li>
+          <li>1 white onion, sliced</li>
+          <li>2 garlic cloves, minced</li>
+          <li>½ inch ginger, minced</li>
+          <li>1 tablespoon Thai red paste vegan paste </li>
+          <li>1 cup thick coconut milk</li>
+          <li>2 cups low sodium vegetable stock</li>
+          <li>Salt & pepper to taste</li>
+          <li>Juice of half lime</li>
+          <li>2 tablespoon olive oil</li>
+        </ul>
+        <h3>Instructions</h3>
+        <p class="description">1.Heat olive oil in large sauce pan. Add sliced onions, cook until translucent. Add ginger and garlic sauté cook for a minute.<br/>
+          <br/>
+          2.Add red Thai paste stirring constantly cook further 1 minute.<br/>
+          <br/>
+          3.Add chunks of pumpkin (or pumpkin puree for short cut method). Cook for 2 to 3 minutes.Pour stock bring it to boil, uncovered, then reduce heat and let it simmer cook rapidly for 15 minutes or until pumpkin is tender.Add salt and pepper to taste.<br/>
+          <br/>
+          4.Pour coconut milk, stir and cook for 2 minutes on low flame.Blend the soup using immersion blender until smooth.
+          </p>
+        </div>
+      </section>
+      <section id="recipes">
+        <div id="zucchini-recipes">
+          <name class="recipe-name" >Vegan Zucchini Brownies</name>
+        <img src= "assets/zucchini-dish.jpg" alt="recipe image" class="recipes-pics"></img>
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Zucchini and Banana</li>
+          <li>Flour</li>
+          <li>Unsweetened cocoa powder</li>
+          <li>Baking Powder</li>
+          <li>Salt</li>
+          <li>Sugar</li>
+          <li>Neutral oil</li>
+          <li>Dairy-free-milk</li>
+          <li>Vanilla extract</li>
+          <li>Vegan chocolate chips</li>
+        </ul>
+        <h3>Instructions</h3>
+        <p class="description">Step 1: Prep oven, zucchini, and banana
+          Start by preheating the oven to 347°F. Grease an 8″x12″ baking pan (or similar size) with a bit of vegan butter and then line with additional parchment paper. Then grate the zucchini and mash the banana. Set both aside.<br/>
+          <br/>
+          Step 2: Make the batter<br/>
+          In a large bowl, whisk together the flour, cocoa powder, baking powder, salt, and sugar. Then add the oil, dairy-free milk, vanilla extract, mashed banana, and grated zucchini and mix everything until just combined.<br/>
+          <br/>
+          Step 3: Bake and cool<br/>
+          Now pour the batter into the prepared baking pan and smooth it out. Sprinkle with chocolate chips if desired and bake for about 35 minutes. Let the chocolate cake cool for 15 minutes, then lift it out of the pan using the overhanging parchment paper and let it cool completely before cutting into brownies. Sprinkle with some coarse sea salt as desired and enjoy!</p>
+        </div>
 
       </section>
+      
     </main>
     <footer>
       <hr>
