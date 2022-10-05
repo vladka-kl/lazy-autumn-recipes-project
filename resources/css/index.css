@@ -1,6 +1,6 @@
 :root {
-  --primary-accent: #43684e;
-  --secondary-accent: #cd8e58;
+  --primary-accent: #1d2526;
+  --secondary-accent: #ff9000;
   --background-color: #f2ebe4;
   --card-background: #f4f2f3;
   --main-font: "Gothic A1", sans-serif;
@@ -42,7 +42,7 @@ body {
   background-image: url(/assets/teaser-image.jpeg);
   background-size: cover;
   background-position: top;
-  min-height: 60vh;
+  min-height: 50vh;
   margin-bottom: var(--lg-margin);
 }
 .welcome p {
