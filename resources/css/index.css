@@ -124,7 +124,7 @@ body {
   transform: translateY(0);
 }
 
-/* -------Recipe Section------- */
+/* -------Recipe Section------ */
 #recipes {
   display: flex;
   flex-flow: column wrap;
