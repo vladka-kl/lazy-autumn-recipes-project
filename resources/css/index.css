@@ -43,7 +43,7 @@ body {
   background-position: bottom;
 }
 .welcome p {
-  font-size: var(--sm-font);
+  font-size: var(--md-font);
   color: white;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 .ingredient-headline {
   display: flex;
-  font-size: var(--md-font);
+  font-size: var(--sm-font);
   flex-direction: row;
   justify-content: space-around;
   color: var(--primary-accent);
