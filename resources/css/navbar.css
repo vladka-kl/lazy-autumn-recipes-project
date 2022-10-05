@@ -5,6 +5,7 @@ html {
 /* Header */
 .header {
   background-color: var(--primary-accent);
+  box-shadow: var(--standard-shadow);
   position: sticky;
   top: 0;
   width: 100%;
