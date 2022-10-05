@@ -16,13 +16,16 @@ html {
 
 /* Logo */
 .logo img {
-  display: inline-block;
   margin-left: 9px;
   transform: matrix(0.96, -0.27, 0.28, 0.96, 0, 0);
   width: 47.14px;
   height: 43.77px;
 }
-
+ .containerLogo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+ }
 /* Title */
 h1 {
   font-size: var(--base-font-size);
@@ -109,4 +112,41 @@ h1 {
 /* Rotate last bar */
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;     
+    background: none;
+    position: relative;
+    box-shadow: none;
+} 
+  .containerLogo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  .container {
+    display: none;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: none;
+  }
+  .menu li {
+    display: flex;
+    border: none;
+  }
+  .menu li a {
+    display: flex;  
+  }
+  .dropdown_button {
+    display: none;
+  }
+  h1 {
+    padding: 7.5px 10px 7.5px 0
+  }
 }

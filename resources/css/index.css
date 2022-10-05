@@ -241,6 +241,13 @@ form {
     margin-bottom: var(--lg-margin);
     width: 700px;
   }
+  .scrollToTop {
+    bottom: 5%;
+    right: 5%; 
+  }
+
+  
+
 }
 
 /* Recipe Section */

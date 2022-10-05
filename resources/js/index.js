@@ -9,6 +9,8 @@ function handleMenuDropdown(element) {
   }
 }
 
+
+
 // ------TO TOP BUTTON
 // Appears after the page has been scrolled 80% down the total height of the page
 function handleScroll() {
