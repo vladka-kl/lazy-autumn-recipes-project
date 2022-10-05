@@ -15,7 +15,7 @@
   --lg-font: 24px;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
-  --accent-shadow: 2px 2px 4px var(--secondary-accent);
+  --accent-shadow: 1px 1px 2px var(--secondary-accent);
 }
 
 * {
@@ -147,18 +147,19 @@ body {
   font-size: var(--lg-font);
   font-weight: bold;
   color: var(--primary-accent);
-  margin-top: var(--md-margin);
-  margin-bottom: var(--md-margin);
+  margin: var(--md-margin);
+  margin-top: var(--lg-margin);
+  text-shadow: var(--accent-shadow);
 }
 
 .recipes-pics {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: var(--sm-margin);
+  margin-bottom: var(--lg-margin);
   position: relative;
   height: 250px;
-  width: 90%;
+  width: 95%;
   object-fit: cover;
 }
 
@@ -207,5 +208,6 @@ h3 {
   }
   #recipes {
     max-width: 70%;
+    padding: var(--md-margin);
   }
 }
