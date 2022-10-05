@@ -25,7 +25,7 @@ html {
 
 /* Title */
 h1 {
-  font-size: var(--base-font-size);
+  font-size: var(--sm-font);
   font-family: var(--main-font);
   font-weight: 900;
   line-height: 20px;
@@ -37,7 +37,7 @@ h1 {
   background-color: transparent;
   color: var(--secondary-accent);
   padding: var(--base-padding);
-  font-size: var(--base-font-size);
+  font-size: var(--md-font);
   border: none;
   cursor: pointer;
   width: 100px;
@@ -52,7 +52,8 @@ h1 {
   box-shadow: var(--standard-shadow);
   z-index: 1;
   right: 0;
-  min-width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 .menu li {
@@ -95,7 +96,6 @@ h1 {
   margin: 6px 0;
   transition: 0.4s;
 }
-
 /* Rotate first bar */
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
