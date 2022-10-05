@@ -10,8 +10,8 @@
   --max-margin: 48px;
   --xs-font: 16px;
   --sm-font: 18px;
-  --md-font: 24px;
-  --lg-font: 30px;
+  --md-font: 20px;
+  --lg-font: 24px;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
@@ -63,7 +63,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  font-size: var(--md-font);
+  font-size: var(--lg-font);
   font-weight: bold;
   height: 48px;
   padding-left: 8px;
@@ -71,7 +71,7 @@ body {
 }
 .ingredient-headline {
   display: flex;
-  font-size: var(--sm-font);
+  font-size: var(--md-font);
   flex-direction: row;
   justify-content: space-around;
   color: var(--primary-accent);
@@ -136,7 +136,7 @@ body {
 }
 
 name {
-  font-size: var(--md-font);
+  font-size: var(--lg-font);
   font-weight: bold;
   color: var(--primary-accent);
   margin-top: var(--md-margin);
@@ -155,7 +155,7 @@ name {
 
 h3 {
   color: var(--primary-accent);
-  font-size: var(--sm-font);
+  font-size: var(--md-font);
   font-weight: bold;
   padding: 0;
   margin: 0;
