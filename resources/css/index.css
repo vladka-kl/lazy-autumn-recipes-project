@@ -8,15 +8,17 @@
   --md-margin: 16px;
   --lg-margin: 32px;
   --max-margin: 48px;
-  --base-font-size: 18px;
-  --section-font-size: 1.3em;
+  --xs-font: 16px;
+  --sm-font: 18px;
+  --md-font: 24px;
+  --lg-font: 30px;
   --base-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
 
 * {
   box-sizing: border-box;
-  font-size: var(--base-font-size);
+  font-size: var(--sm-font);
 }
 
 body {
@@ -41,13 +43,13 @@ body {
   background-position: bottom;
 }
 .welcome p {
-  font-size: var(--base-font-size);
+  font-size: var(--sm-font);
   color: white;
 }
 
 /*-----Welcome Section start here------*/
 .welcome {
-  font-size: var(--base-font-size);
+  font-size: var(--sm-font);
   font-family: "Gothic A1", sans-serif;
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  font-size: var(--section-font-size);
+  font-size: var(--md-font);
   font-weight: bold;
   height: 48px;
   padding-left: 8px;
@@ -96,7 +98,7 @@ body {
 /* To-the-top Button */
 
 .to-top {
-  font-size: 16px;
+  font-size: var(--xs-font);
   color: black;
   background: white;
   position: fixed;
@@ -133,7 +135,7 @@ body {
 }
 
 name {
-  font-size: 1.2em;
+  font-size: var(--md-font);
   font-weight: bold;
   color: var(--primary-accent);
   margin-top: var(--md-margin);
@@ -162,7 +164,7 @@ h3 {
 
 #recipes ul {
   color: var(--primary-accent);
-  font-size: 1em;
+  font-size: var(--sm-font);
   padding: 0;
   margin: 0;
   padding-left: var(--lg-margin);
@@ -172,7 +174,7 @@ h3 {
 
 .description {
   color: var(--primary-accent);
-  font-size: 1em;
+  font-size: var(--sm-font);
   padding-left: 8%;
   max-width: 90%;
   padding-bottom: 5%;
