@@ -3,10 +3,6 @@ html {
   scroll-padding-top: 4rem;
 }
 
-li{
-  list-style: none;
-}
-
 a{
   color: var(--background-color);
   text-decoration: none;
@@ -63,6 +59,7 @@ h1 {
   text-align: center;
   transition: 0.3s;
   padding: 12px 10px;
+  list-style: none;
 } 
 
 .nav-link{
@@ -123,7 +120,6 @@ h1 {
     position: unset;
     width: auto;
     padding: 0px 8px;
-
   }
 
   .hamburger{
