@@ -3,11 +3,7 @@ html {
   scroll-padding-top: 4rem;
 }
 
-li {
-  list-style: none;
-}
-
-a {
+a{
   color: var(--background-color);
   text-decoration: none;
 }
@@ -62,7 +58,8 @@ h1 {
   text-align: center;
   transition: 0.3s;
   padding: 12px 10px;
-}
+  list-style: none;
+} 
 
 .nav-link {
   transition: 0.3s ease-out;

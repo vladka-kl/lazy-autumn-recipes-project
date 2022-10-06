@@ -117,11 +117,16 @@ body {
   transform: translateY(50x);
   transition: all 0.5s ease;
   height: 40px;
-  color: #fff;
   background-color: var(--secondary-accent);
-  border: 2px solid #fff;
+  border: 2px solid var(--background-color);
   border-radius: 50%;
   font: bold 20px monospace;
+  display: flex;
+  align-items: center;
+}
+
+.filter-white{
+  filter: invert(94%) sepia(100%) saturate(28%) hue-rotate(340deg) brightness(108%) contrast(109%);
 }
 
 .showBtn {
