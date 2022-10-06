@@ -43,7 +43,7 @@ body {
   background-image: url(assets/teaser-image.jpeg);
   background-size: cover;
   background-position: center;
-  min-height: 50vh;
+  min-height: 70vh;
   margin-bottom: var(--lg-margin);
 }
 .welcome p {
@@ -125,8 +125,9 @@ body {
   align-items: center;
 }
 
-.filter-white{
-  filter: invert(94%) sepia(100%) saturate(28%) hue-rotate(340deg) brightness(108%) contrast(109%);
+.filter-white {
+  filter: invert(94%) sepia(100%) saturate(28%) hue-rotate(340deg)
+    brightness(108%) contrast(109%);
 }
 
 .showBtn {

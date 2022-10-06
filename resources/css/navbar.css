@@ -1,9 +1,9 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 5rem;
 }
 
-a{
+a {
   color: var(--background-color);
   text-decoration: none;
 }
@@ -59,7 +59,7 @@ h1 {
   transition: 0.3s;
   padding: 12px 10px;
   list-style: none;
-} 
+}
 
 .nav-link {
   transition: 0.3s ease-out;
