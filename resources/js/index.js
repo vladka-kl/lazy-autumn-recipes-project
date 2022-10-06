@@ -1,14 +1,16 @@
 // Dropdown Menu
-function handleMenuDropdown(element) {
-  element.classList.toggle("change");
-  const courses = document.getElementById("menu_id");
-  if (courses.style.display == "block") {
-    courses.style.display = "none";
-  } else {
-    courses.style.display = "block";
-  }
-}
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 
 
 // ------TO TOP BUTTON

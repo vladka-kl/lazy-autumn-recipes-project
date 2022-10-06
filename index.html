@@ -15,33 +15,36 @@
     <script src="https://kit.fontawesome.com/78afca721f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="containerLogo">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo maple">
-      </div>
-      <h1>LAZY AUTUMN RECIPES</h1>
-      </div>
-      <div class="main">
-        <div class="dropdown_list">
-            <button class="dropdown_button">
-                <div class="container" onclick="handleMenuDropdown(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </div>
-              </button>
-            </button>
- 
-            <div id="menu_id" class="menu">
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#ingredients-selection">Ingredients</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#footer-links">Contact us</a></li>
-            </div>
-        </div>
-      </div>
-    </header>
+
+    <header>
+      <nav class="navbar">
+
+       <div class="containerLogoH">
+         <div class="logo">
+           <img src="assets/logo.png" alt="Logo maple">
+         </div>
+         <h1>LAZY AUTUMN RECIPES</h1>
+       </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#welcome" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#ingredients-selection"class="nav-link">Ingredients</a></li>
+          <li class="nav-item">
+            <a href="#recipes" class="nav-link">Recipes</a></li>
+          <li class="nav-item">
+            <a href="#footer-links" class="nav-link">Contact us</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+         </div>
+       
+      </nav>
+     </header>
 
     <main>
       <div  id="welcome" class = "welcome">

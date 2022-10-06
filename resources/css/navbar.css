@@ -1,32 +1,48 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
-/* Header */
-.header {
+li{
+  list-style: none;
+}
+
+a{
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+header{
   background-color: var(--primary-accent);
-  position: sticky;
+  box-shadow: var(--standard-shadow);
+  position: fixed;
   top: 0;
+  z-index: 100;
   width: 100%;
+}
+
+/* Navbar Container*/
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }
 
-/* Logo */
+/* Logo + Title */
+.containerLogoH{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+ }
+
 .logo img {
   margin-left: 9px;
   transform: matrix(0.96, -0.27, 0.28, 0.96, 0, 0);
   width: 47.14px;
   height: 43.77px;
 }
- .containerLogo{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
- }
-/* Title */
+
 h1 {
   font-size: var(--sm-font);
   font-family: var(--main-font);
@@ -35,116 +51,87 @@ h1 {
   color: var(--background-color);
 }
 
-/* Dropdown list */
-.dropdown_button {
-  background-color: transparent;
-  color: var(--secondary-accent);
-  padding: var(--base-padding);
-  font-size: var(--md-font);
-  border: none;
-  cursor: pointer;
-  width: 100px;
-  border: none;
-}
+/* List of links, navigation */
 
-.menu {
-  display: none;
+.nav-menu{
   position: absolute;
-  background-color: var(--background-color);
-  box-shadow: var(--standard-shadow);
-  z-index: 1;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.menu li {
-  color: black;
-  padding: 12px 10px;
-  text-decoration: none;
-  display: block;
-  list-style: none;
+  left: 100%;
+  top: 30px;
+  gap: 0;
   background-color: var(--primary-accent);
-  border: 1px solid var(--background-color);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  padding: 12px 10px;
+} 
+
+.nav-link{
+  transition: 0.3s ease-out;
+}
+.nav-link:hover{
+  color: var(--secondary-accent);
 }
 
-.menu li a {
-  text-decoration: none;
-  color: var(--background-color);
+/* Burger Icon */
+.bar{
   display: block;
-  padding: 10px;
-}
-
-.menu li:hover {
-  background-color: var(--background-color);
-  color: var(--primary-accent);
-}
-.menu li a:hover {
-  color: var(--primary-accent);
-}
-/* Menu Icon */
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 30px;
-  height: 4.5px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: var(--secondary-accent);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-/* Rotate first bar */
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
 }
 
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
+.hamburger{
+  position: relative;
+  right:5%
 }
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-/* Rotate last bar */
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
+.nav-item{
+    margin: 16px; 
+  }
+.nav-menu.active{
+    left: 0;
+    top: 30px;
+  }
 
 @media screen and (min-width: 768px) {
-  .menu {
+  
+  nav {
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;     
-    background: none;
-    position: relative;
-    box-shadow: none;
-} 
-  .containerLogo {
-    display: flex;
-    justify-content: left;
     align-items: center;
-}
-  .container {
-    display: none;
   }
-  .bar1,
-  .bar2,
-  .bar3 {
-    display: none;
-  }
-  .menu li {
+
+  .nav-menu {
     display: flex;
-    border: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+    left: 0;
+    position: unset;
+    width: auto;
+    padding: 0px 8px;
+
   }
-  .menu li a {
-    display: flex;  
-  }
-  .dropdown_button {
+
+  .hamburger{
     display: none;
+    cursor: pointer;
   }
-  h1 {
-    padding: 7.5px 10px 7.5px 0
+
+  .nav-item{
+    margin: 8px; 
   }
 }
