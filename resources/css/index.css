@@ -129,6 +129,25 @@ body {
   transform: translateY(0);
 }
 
+
+@media screen and (min-width: 768px) {
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: var(--lg-margin);
+    width: 700px;
+  }
+  .scrollToTop {
+    bottom: 5%;
+    right: 5%; 
+  }
+
+  
+
+}
+
+/* Recipe Section */
 /* -------Recipe Section------ */
 #recipes {
   display: flex;
