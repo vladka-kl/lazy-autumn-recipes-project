@@ -3,22 +3,23 @@ html {
   scroll-padding-top: 4rem;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   color: var(--background-color);
   text-decoration: none;
 }
 
-header{
+header {
   background-color: var(--primary-accent);
   box-shadow: var(--standard-shadow);
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
+  padding: var(--sm-margin);
 }
 
 /* Navbar Container*/
@@ -30,11 +31,11 @@ nav {
 }
 
 /* Logo + Title */
-.containerLogoH{
+.containerLogoH {
   display: flex;
   align-items: center;
   flex-direction: row wrap;
- }
+}
 
 .logo img {
   margin-left: var(--lg-margin);
@@ -51,7 +52,7 @@ h1 {
 
 /* List of links, navigation */
 
-.nav-menu{
+.nav-menu {
   position: absolute;
   left: 100%;
   top: 30px;
@@ -61,17 +62,17 @@ h1 {
   text-align: center;
   transition: 0.3s;
   padding: 12px 10px;
-} 
+}
 
-.nav-link{
+.nav-link {
   transition: 0.3s ease-out;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: var(--secondary-accent);
 }
 
 /* Burger Icon */
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -81,30 +82,29 @@ h1 {
   background-color: var(--secondary-accent);
 }
 
-.hamburger{
+.hamburger {
   position: relative;
-  right:5%
+  right: 5%;
 }
-.hamburger.active .bar:nth-child(2){
-    opacity: 0;
-  }
-.hamburger.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-.hamburger.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-  }
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-.nav-item{
-    margin: 16px; 
-  }
-.nav-menu.active{
-    left: 0;
-    top: 30px;
-  }
+.nav-item {
+  margin: 16px;
+}
+.nav-menu.active {
+  left: 0;
+  top: 30px;
+}
 
 @media screen and (min-width: 768px) {
-  
   nav {
     min-height: 70px;
     display: flex;
@@ -121,15 +121,14 @@ h1 {
     position: unset;
     width: auto;
     padding: 0px 8px;
-
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
     cursor: pointer;
   }
 
-  .nav-item{
-    margin: 8px; 
+  .nav-item {
+    margin: 8px;
   }
 }
