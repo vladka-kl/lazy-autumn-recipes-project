@@ -40,7 +40,7 @@ body {
   text-align: left;
   font-size: var(--sm-font);
   padding: 0 var(--lg-margin);
-  background-image: url(/assets/teaser-image.jpeg);
+  background-image: url(assets/teaser-image.jpeg);
   background-size: cover;
   background-position: center;
   min-height: 50vh;
