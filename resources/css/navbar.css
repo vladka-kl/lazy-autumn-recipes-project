@@ -36,6 +36,7 @@ nav {
 .logo img {
   margin-left: var(--lg-margin);
   margin-right: 5px;
+  object-fit: contain;
 }
 
 h1 {
