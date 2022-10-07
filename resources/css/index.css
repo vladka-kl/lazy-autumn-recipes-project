@@ -123,6 +123,10 @@ body {
   justify-content: center;
 }
 
+.filter-white {
+  width: 50px;
+}
+
 .showBtn {
   opacity: 1;
   transform: translateY(0);
