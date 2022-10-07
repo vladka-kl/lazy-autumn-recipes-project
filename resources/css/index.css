@@ -116,19 +116,15 @@ body {
   transform: translateY(50x);
   transition: all 0.5s ease;
   height: 40px;
-  background-color: var(--secondary-accent);
   border: 2px solid var(--background-color);
   border-radius: 50%;
-  font: bold 20px monospace;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .filter-white {
-  font-size: var(--lg-font);
-  text-align: center;
-  color: #fff;
+  width: 50px;
 }
 
 .showBtn {
