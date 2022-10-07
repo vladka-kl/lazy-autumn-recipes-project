@@ -47,6 +47,7 @@ form {
   margin-left: var(--max-margin);
   margin-right: var(--max-margin);
   box-shadow: var(--standard-shadow);
+  margin: auto;
 }
 
 /*------style the dialog modal-------*/
