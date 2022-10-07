@@ -37,6 +37,7 @@ nav {
   margin-left: var(--lg-margin);
   margin-right: 5px;
   object-fit: contain;
+  width: 55px;
 }
 
 h1 {
